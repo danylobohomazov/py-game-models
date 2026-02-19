@@ -36,7 +36,9 @@ class Player (models.Model):
     bio = models.CharField(
         "It stores a short description provided "
         "by a user about himself/herself.",
-        blank=True)
+        blank=True,
+        max_length=255
+    )
     race = models.ForeignKey(
         Race,
         on_delete=models.CASCADE,
