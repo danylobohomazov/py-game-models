@@ -1,7 +1,5 @@
 from django.db import models
 
-import db.models
-
 
 class Race (models.Model):
     RACE_FIELD = (
